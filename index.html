@@ -1,0 +1,807 @@
+            border-radius: 50px;
+            white-space: nowrap;
+        }
+
+        .pricing-plan {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .pricing-card.popular .pricing-plan {
+            color: var(--accent);
+        }
+
+        .pricing-price {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .pricing-card.popular .pricing-price {
+            color: white;
+        }
+
+        .pricing-price span {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--gray);
+        }
+
+        .pricing-card.popular .pricing-price span {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .pricing-desc {
+            font-size: 13px;
+            color: var(--gray);
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .pricing-card.popular .pricing-desc {
+            color: rgba(255,255,255,0.5);
+            border-bottom-color: rgba(255,255,255,0.1);
+        }
+
+        .pricing-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .pricing-card.popular .pricing-features li {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .pricing-features li i {
+            color: #16a34a;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .pricing-features li.disabled {
+            opacity: 0.4;
+        }
+
+        .pricing-features li.disabled i {
+            color: var(--gray);
+        }
+
+        .btn-pricing {
+            width: 100%;
+            padding: 14px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+
+        .btn-pricing-outline {
+            background: transparent;
+            border: 2px solid #e2e8f0;
+            color: var(--dark);
+        }
+
+        .btn-pricing-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .btn-pricing-primary {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 8px 25px rgba(37,99,235,0.4);
+        }
+
+        .btn-pricing-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(37,99,235,0.5);
+        }
+
+        /* ====== CTA SECTION ====== */
+        .cta-section {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .cta-shape-1 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: #2563eb;
+            filter: blur(120px);
+            opacity: 0.2;
+            top: -200px;
+            right: -100px;
+        }
+
+        .cta-shape-2 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: #06b6d4;
+            filter: blur(120px);
+            opacity: 0.15;
+            bottom: -150px;
+            left: -100px;
+        }
+
+        .cta-inner {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-inner .section-tag {
+            background: rgba(255,255,255,0.1);
+            color: #93c5fd;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .cta-title span {
+            background: linear-gradient(135deg, #67e8f9, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-desc {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.75;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .cta-contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+        }
+
+        .contact-item i {
+            color: var(--accent);
+            font-size: 18px;
+        }
+
+        .contact-item a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            background: var(--dark2);
+            padding: 72px 0 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 16px;
+            display: inline-flex;
+        }
+
+        .footer-brand .logo-text {
+            color: white;
+        }
+
+        .footer-desc {
+            font-size: 14px;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.75;
+            margin-bottom: 24px;
+            max-width: 280px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-link {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: rgba(255,255,255,0.45);
+            font-size: 14px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 4px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-bottom-links a {
+            font-size: 13px;
+            color: rgba(255,255,255,0.3);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ====== SCROLL TO TOP ====== */
+        .scroll-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(37,99,235,0.4);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s;
+            z-index: 999;
+            border: none;
+            font-size: 16px;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-4px);
+        }
+
+        /* ====== ANIMATIONS ====== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-up-delay-1 { transition-delay: 0.1s; }
+        .fade-up-delay-2 { transition-delay: 0.2s; }
+        .fade-up-delay-3 { transition-delay: 0.3s; }
+        .fade-up-delay-4 { transition-delay: 0.4s; }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            .why-visual {
+                display: none;
+            }
+            .steps-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .steps-line {
+                display: none;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-visual {
+                display: none;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 24px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                gap: 20px;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                color: var(--gray) !important;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-bar-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-stats {
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+            }
+            .stat-divider {
+                width: 60px;
+                height: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <span class="logo-text">Care<span>Nest</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#caregivers">Caregivers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-grid"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    Trusted by 10,000+ Families Nationwide
+                </div>
+                <h1 class="hero-title">
+                    Compassionate Care, <span>Right at Home</span>
+                </h1>
+                <p class="hero-desc">
+                    We connect you with certified, background-checked caregivers who provide personalized, professional care — so your loved ones can thrive in the comfort of their own home.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Book a Caregiver
+                    </a>
+                    <a href="#services" class="btn-outline">
+                        <i class="fas fa-play-circle"></i>
+                        Explore Services
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Families Served</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Expert Caregivers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Average Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card-main">
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&q=80" alt="Caregiver with elderly patient" class="hero-img">
+                    <div class="hero-img-overlay"></div>
+                </div>
+                <div class="hero-floating-card hfc-1">
+                    <div class="hfc-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="hfc-info">
+                        <h4>Fully Certified</h4>
+                        <p>All caregivers verified & trained</p>
+                    </div>
+                </div>
+                <div class="hero-floating-card hfc-2">
+                    <div class="hfc-icon"><i class="fas fa-clock"></i></div>
+                    <div class="hfc-info">
+                        <h4>24/7 Available</h4>
+                        <p>Round-the-clock care support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TRUST BAR ====== -->
+    <div class="trust-bar">
+        <div class="trust-bar-container">
+            <div class="trust-item">
+                <i class="fas fa-shield-check"></i>
+                <span>Background Checked</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-certificate"></i>
+                <span>Licensed & Insured</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-user-md"></i>
+                <span>Medically Trained Staff</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Support</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-star"></i>
+                <span>4.9/5 Rating</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SERVICES ====== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <div>
+                    <span class="section-tag">Our Services</span>
+                    <h2 class="section-title">Care Tailored to <span>Every Need</span></h2>
+                    <p class="section-desc">From daily assistance to specialized medical care, we have a solution for every situation.</p>
+                </div>
+                <a href="#contact" class="btn-primary">View All Services</a>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <div class="service-icon" style="background:#dbeafe;">
+                        <i class="fas fa-user-nurse" style="color:#2563eb;"></i>
+                    </div>
+                    <h3 class="service-title">Personal Care</h3>
+                    <p class="service-desc">Assistance with bathing, grooming, dressing, and daily personal hygiene for comfort and dignity.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up fade-up-delay-1">
+                    <div class="service-icon" style="background:#dcfce7;">
+                        <i class="fas fa-heartbeat" style="color:#16a34a;"></i>
+                    </div>
+                    <h3 class="service-title">Medical Support</h3>
+                    <p class="service-desc">Skilled nursing care, medication management, wound care and chronic disease monitoring at home.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up fade-up-delay-2">
+                    <div class="service-icon" style="background:#ede9fe;">
+                        <i class="fas fa-brain" style="color:#7c3aed;"></i>
+                    </div>
+                    <h3 class="service-title">Dementia Care</h3>
+                    <p class="service-desc">Specialized memory care and cognitive support for loved ones living with Alzheimer's or dementia.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up fade-up-delay-1">
+                    <div class="service-icon" style="background:#fef3c7;">
+                        <i class="fas fa-home" style="color:#d97706;"></i>
+                    </div>
+                    <h3 class="service-title">Household Help</h3>
+                    <p class="service-desc">Light housekeeping, laundry, meal preparation, and grocery shopping to maintain a safe home.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up fade-up-delay-2">
+                    <div class="service-icon" style="background:#fce7f3;">
+                        <i class="fas fa-comments" style="color:#db2777;"></i>
+                    </div>
+                    <h3 class="service-title">Companionship</h3>
+                    <p class="service-desc">Friendly social interaction, conversation, hobbies, and emotional support to reduce isolation.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up fade-up-delay-3">
+                    <div class="service-icon" style="background:#cffafe;">
+                        <i class="fas fa-car" style="color:#0891b2;"></i>
+                    </div>
+                    <h3 class="service-title">Transportation</h3>
+                    <p class="service-desc">Safe, reliable transportation to medical appointments, errands, and community activities.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== HOW IT WORKS ====== -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 0;">
+                <span class="section-tag">Simple Process</span>
+                <h2 class="section-title">Get Started in <span>4 Easy Steps</span></h2>
+                <p class="section-desc" style="margin: 0 auto;">Getting the care you need is simple, fast, and stress-free. Here's how it works.</p>
+            </div>
+            <div class="steps-container">
+                <div class="steps-line"></div>
+                <div class="step-card fade-up">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Tell Us Your Needs</h3>
+                    <p class="step-desc">Fill out our quick form and share details about the care required for your loved one.</p>
+                </div>
+                <div class="step-card fade-up fade-up-delay-1">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Get Matched</h3>
+                    <p class="step-desc">We match you with the best-fit certified caregiver based on your specific needs and preferences.</p>
+                </div>
+                <div class="step-card fade-up fade-up-delay-2">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Meet & Approve</h3>
+                    <p class="step-desc">Meet your caregiver virtually or in person. Approve the match before any care begins.</p>
+                </div>
+                <div class="step-card fade-up fade-up-delay-3">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Care Begins</h3>
+                    <p class="step-desc">Your caregiver starts providing exceptional, personalized care right in the comfort of home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== WHY CHOOSE US ====== -->
+    <section class="section why-us">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-visual">
+                    <div class="why-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80" alt="Professional caregiver" class="why-img">
+                    </div>
+                    <div class="why-badge why-badge-1">
+                        <div class="why-badge-icon"><i class="fas fa-award"></i></div>
+                        <div class="why-badge-text">
+                            <h4>15+ Years</h4>
+                            <p>Industry Experience</p>
+                        </div>
+                    </div>
+                    <div class="why-badge why-badge-2">
+                        <div class="why-badge-icon"><i class="fas fa-smile"></i></div>
+                        <div class="why-badge-text">
+                            <h4>98% Satisfaction</h4>
+                            <p>Client Happiness Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-content">
+                    <span class="section-tag">Why CareNest</span>
+                    <h2 class="section-title">Why Families <span>Trust Us</span></h2>
+                    <p class="section-desc">We go beyond basic care. Our mission is to enrich lives and give families peace of mind.</p>
+                    <div class="features-list">
+                        <div class="feature-item fade-up">
+                            <div class="feature-icon" style="background:#dbeafe;">
+                                <i class="fas fa-user-shield" style="color:#2563eb;"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Rigorously Vetted Caregivers</h4>
+                                <p>Every caregiver passes comprehensive background checks, skill assessments, and mandatory training before joining our team.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item fade-up fade-up-delay-1">
+                            <div class="feature-icon" style="background:#dcfce7;">
+                                <i class="fas fa-clipboard-check" style="color:#16a34a;"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Personalized Care Plans</h4>
+                                <p>We create a custom care plan for each client, regularly reviewed and updated to match evolving needs.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item fade-up fade-up-delay-2">
+                            <div class="feature-icon" style="background:#fef3c7;">
+                                <i class="fas fa-phone-alt" style="color:#d97706;"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>24/7 Family Support Line</h4>
+                                <p>Our care coordinators are available around the clock to answer questions and handle any concerns immediately.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item fade-up fade-up-delay-3">
+                            <div class="feature-icon" style="background:#ede9fe;">
+                                <i class="fas fa-sync-alt" style="color:#7c3aed;"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Flexible Scheduling</h4>
+                                <p>Choose from hourly visits to full-time live-in care. Scale up or down anytime based on your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CAREGIVERS ====== -->
+    <section class="caregivers" id="caregivers">
+        <div class="container">
+            <div class="caregivers-header">
+                <div>
+                    <span class="section-tag">Our Team</span>
+                    <h2 class="section-title">Meet Our Expert <span style="color:#67e8f9;">Caregivers</span></h
